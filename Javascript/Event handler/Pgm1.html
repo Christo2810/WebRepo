@@ -1,0 +1,32 @@
+<html>
+<center><body>
+
+  <h2>Event Listener</h2>
+
+  <button id="btn">Button</button>
+
+  <p id="demo"></p>
+
+  <script>
+    var x = document.getElementById("btn");
+ x.addEventListener("mouseover", mouseOverFunction);
+ x.addEventListener("click", mouseClickFunction);
+ x.addEventListener("mouseout", mouseOutFunction);
+
+    function mouseOverFunction() {
+      document.getElementById("demo").innerHTML += "Moused over!<br>";
+    }
+
+    function mouseClickFunction() {
+      document.getElementById("demo").innerHTML += "Clicked!<br>";
+    }
+
+    function mouseOutFunction() {
+      document.getElementById("demo").innerHTML += "Moused out!<br>";
+    }
+  </script>
+
+</body></center>
+
+</html>
+

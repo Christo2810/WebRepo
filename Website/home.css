@@ -1,0 +1,11 @@
+body {
+background-color:grey;
+}
+.absolute-container {
+    position: relative;
+}
+
+.absolute-div {
+    position: absolute;
+   background-color: #ADD8E6;
+}

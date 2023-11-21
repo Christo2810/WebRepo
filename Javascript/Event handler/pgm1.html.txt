@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Change</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+        }
+
+        #btn {
+            margin: auto;
+            padding: 1em;
+            border: 3px solid black;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div class="image-container">
+<img src="" alt="">
+
+</div>
+<script>
+document.getElementById("btn").addEventListener("click", changeBackground);
+function changeBackground() 
+{
+var color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+document.body.style.background = color;
+}
+</script>
+</body>
+</html>
+
+

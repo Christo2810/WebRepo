@@ -1,0 +1,12 @@
+.relative-container {
+    position: relative;
+}
+
+.relative-div {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: #33FF57;
+}
