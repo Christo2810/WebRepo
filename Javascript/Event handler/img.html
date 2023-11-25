@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<style>
+img{
+            background-repeat: no-repeat;
+            width: 50%;
+            height:50%;
+        }
+</style>
+<body><center>
+<h1>Images</h1>
+    <div class="row">
+        <div class="content" id="content">
+            <img src="img1.jfif" id="image"><br><br>
+            <div class="data">
+                <h1 id="heading1">FootBall</h1>
+                <h1 id="heading2">Cricket</h1>
+            </div>
+        </div>
+    </div>
+<script>
+    document.getElementById("content").addEventListener("mouseover",change1);
+    document.getElementById("content").addEventListener("mouseout",change2);
+    function change1(){
+        document.getElementById('image').src = "img1.jfif";
+        document.getElementById('heading1').style.display="none";
+        document.getElementById('heading2').style.display="block";
+    }
+    function change2(){
+        document.getElementById('image').src = "img2.jfif";
+        document.getElementById('heading1').style.display="block";
+        document.getElementById('heading2').style.display="none";
+    }
+</script></center>
+</body>
+</html>
