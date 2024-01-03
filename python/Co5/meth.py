@@ -1,0 +1,5 @@
+f=open("hel.txt","w")
+str=("python programming")
+f.write(str)
+print("the file number is:",f.fileno())
+f.close()
